@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>Global Network News</title>
+</head>
+
+<body class="contenedor-principal">
+
+    <header class="shadow">
+        <div class="contenedor-header">
+            <img src="img/GNN.png" alt="Logo de tu empresa">
+        </div>
+
+        <div class="contenedor-header lato-black">
+            <h1>Global Network News</h1>
+        </div>
+
+        <div class="contenedor-header lato-bold">
+
+            <div class="search-container">
+                <div id="waffle">
+                    <input type="text" id="search-bar" placeholder="Buscar Noticia">
+                    <button id="search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+                            <path
+                                d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+                                fill="#efeff1"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul id="search-results"></ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </header>
+
+
+
+    <main class="shadow" id="main">
+
+    </main>
+
+    <div class="control-buttons lato-bold">
+        <button id="before">
+            <div class="button-box">
+                <span class="button-elem">
+                    <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="button-elem">
+                    <svg viewBox="0 0 46 40">
+                        <path
+                            d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z">
+                        </path>
+                    </svg>
+                </span>
+            </div>
+        </button>
+        <h3 id="actual-page">
+            mantenimiento...
+        </h3>
+        <button id="after">
+            <div class="button-box">
+                <span class="button-elem">
+                    <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="button-elem">
+                    <svg viewBox="0 0 46 40">
+                        <path
+                            d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z">
+                        </path>
+                    </svg>
+                </span>
+            </div>
+        </button>
+    </div>
+
+
+
+
+
+
+    <footer class="shadow lato-black">
+        <a href="./formulario.html">
+            <button class="button">
+                <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <span class="button_text">Agregar Noticia</span>
+                </span>
+            </button>
+        </a>
+        <p>Todos los derechos reservados a Global News Network</p>
+    </footer>
+    <script src="js/FrontIndex.js"></script>
+
+
+</body>
+
+</html>

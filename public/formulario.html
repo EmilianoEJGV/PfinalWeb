@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Noticia</title>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <nav>
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="toggleFormBtn">
+                <span class="slider round"></span>
+            </label>
+            <span id="switchLabel">Apagado</span>
+        </div>
+        <a href="index.html" id="add-news-btn">Ver noticias</a>
+    </nav>
+
+    <div class="menchowey">
+        <div class="form-container">
+            <h1>Agregar Nueva Noticia</h1>
+            <form id="newsForm">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="content">Descripción:</label>
+                <textarea id="content" name="content" required></textarea>
+                <label for="body">Cuerpo de la Noticia:</label>
+                <textarea id="body" name="body" required></textarea>
+                <label for="newsImage">Imagen de la noticia:</label>
+                <input type="file" id="newsImage" name="newsImage" required><br>
+                <label for="newsDate">Fecha:</label>
+                <input type="date" id="newsDate" name="newsDate" required>
+                <button type="submit" class="submit-btn">Publicar Noticia</button>
+            </form>
+        </div>
+
+        <div id="edit-news-form" style="display:none;">
+            <h2>Editar Noticia</h2>
+            <form id="editForm">
+                <input type="hidden" id="edit-id" name="edit-id">
+                <input type="text" id="edit-title" name="edit-title" required>
+                <textarea id="edit-content" name="edit-content" required></textarea>
+                <textarea id="edit-body" name="edit-body" required></textarea>
+                <input type="file" id="edit-newsImage" name="edit-newsImage"><br>
+                <input type="date" id="edit-newsDate" name="edit-newsDate" required>
+                <div id="button-container">
+                    <button type="submit" class="submit-btn">Guardar Cambios</button>
+                    <button type="button" id="cancelButton" class="cancel-btn">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="news-list" class="news-item">
+            <!-- Las noticias se cargarán aquí -->
+        </div>
+    </div>
+
+    <script src="js/Manejonoticias.js"></script>
+    <script src="js/FormScript.js"></script>
+</body>
+</html>
